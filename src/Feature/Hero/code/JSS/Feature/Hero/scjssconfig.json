@@ -1,0 +1,7 @@
+{
+  "sitecore": {
+    "instancePath": "c:\\projects\\Helix base",
+    "shipUrl": "http://demo.helixbase/ship/services/package/install/fileupload",
+    "layoutServiceHost": "http://demo.helixbase"
+  }
+}

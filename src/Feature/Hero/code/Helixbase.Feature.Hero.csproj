@@ -168,6 +168,10 @@
     <Compile Include="ViewModels\HeroViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="JSS\Feature\Hero\package.json" />
+    <Content Include="JSS\Feature\Hero\scjssconfig.json" />
+    <Content Include="App_Config\Include\zzz\Feature.Hero.JSS.config" />
+    <Content Include="JSS\Feature\Hero\yarn.lock" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -176,6 +180,31 @@
     <Content Include="App_Config\Include\Feature\Feature.Hero.Serialization.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="JSS\Feature\Hero\.gitignore" />
+    <Content Include="JSS\Feature\Hero\assets\css\default.css" />
+    <Content Include="JSS\Feature\Hero\assets\img\banner.jpg" />
+    <Content Include="JSS\Feature\Hero\assets\img\sc_logo.png" />
+    <Content Include="JSS\Feature\Hero\internals\build\clean.js" />
+    <Content Include="JSS\Feature\Hero\internals\build\dev.js" />
+    <Content Include="JSS\Feature\Hero\internals\build\pull.js" />
+    <Content Include="JSS\Feature\Hero\internals\build\templates\index.html" />
+    <Content Include="JSS\Feature\Hero\internals\build\webpack\webpack.base.js" />
+    <Content Include="JSS\Feature\Hero\internals\build\webpack\webpack.dev.js" />
+    <Content Include="JSS\Feature\Hero\internals\build\webpack\webpack.prod.js" />
+    <Content Include="JSS\Feature\Hero\internals\manifest\generate.js" />
+    <Content Include="JSS\Feature\Hero\internals\pipelines\generateRouteItem.patch.js" />
+    <Content Include="JSS\Feature\Hero\sitecore\.gitignore" />
+    <Content Include="JSS\Feature\Hero\src\app\componentFactory.js" />
+    <Content Include="JSS\Feature\Hero\src\app\components\Welcome.js" />
+    <Content Include="JSS\Feature\Hero\src\app\components\Welcome.sitecore.js" />
+    <Content Include="JSS\Feature\Hero\src\app\data.js" />
+    <Content Include="JSS\Feature\Hero\src\app\data.sitecore.js" />
+    <Content Include="JSS\Feature\Hero\src\app\index.js" />
+    <Content Include="JSS\Feature\Hero\src\app\ServerHtml.js" />
+    <Content Include="JSS\Feature\Hero\src\boot\client.js" />
+    <Content Include="JSS\Feature\Hero\src\boot\initialState.js" />
+    <Content Include="JSS\Feature\Hero\src\boot\Root.js" />
+    <Content Include="JSS\Feature\Hero\src\boot\server.js" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -218,7 +247,10 @@
       <Name>Helixbase.Foundation.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="JSS\Feature\Hero\.vscode\" />
+    <Folder Include="JSS\Feature\Hero\sitecore\config\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
