@@ -42,7 +42,7 @@ after_build:
     
     $WebRootPath = "c:\inetpub\wwwroot\demo.helixbase"
     
-    Set-SourceFolder ".\build\SourceFolder.config" $WebRootPath ".\App_Data\unicorn"
+    Set-SourceFolder ".\build\SourceFolder.config" $WebRootPath "$WebRootPath\App_Data\unicorn"
     
     Set-Unicorn-Shared-Secret ".\build\Unicorn.SharedSecret.config" $WebRootPath $UnicornSecret
     
