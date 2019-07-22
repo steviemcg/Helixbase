@@ -40,13 +40,11 @@ after_build:
 
     $UnicornSecret = -join ((48..57) + (97..122) | Get-Random -Count 64 | ForEach-Object {[char]$_})
     
-    $SrcDir = Resolve-Path ".\src"
+    $WebRootPath = "c:\inetpub\wwwroot\demo.helixbase"
     
-    Set-SourceFolder ".\build\SourceFolder.config" "c:\inetpub\wwwroot\demo.helixbase" $SrcDir
+    Set-SourceFolder ".\build\SourceFolder.config" $WebRootPath ".\App_Data\unicorn"
     
-    Set-Unicorn-Shared-Secret ".\build\Unicorn.SharedSecret.config" "c:\inetpub\wwwroot\demo.helixbase" $UnicornSecret
-    
-    Set-PublishUrl "$SrcDir\Website\code\Properties\PublishProfiles\Local.pubxml" "c:\inetpub\wwwroot\demo.helixbase"
+    Set-Unicorn-Shared-Secret ".\build\Unicorn.SharedSecret.config" $WebRootPath $UnicornSecret
     
     Sync-Unicorn -ControlPanelUrl "http://demo.helixbase/unicorn.aspx" -SharedSecret $UnicornSecret
 test_script:
